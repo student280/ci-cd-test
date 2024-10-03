@@ -8,7 +8,8 @@ jobs:
         run: ls -a
       - name: step 2
         run: uname
-      - name: |
+      - name: step 3
+        run: |
           echo 'Hello world'
           echo 'Bye - bye'
   job2:
@@ -18,7 +19,8 @@ jobs:
         run: ls -a
       - name: step 2
         run: uname
-      - name: |
+      - name: step 3
+        run: |
           echo 'Hello world'
           echo 'Bye - bye'        
   

@@ -1,0 +1,24 @@
+name: test
+on: [workflow_dispatch]
+jobs:
+  job1:
+    runs-on: ubuntu-latest
+    steps: 
+      - name: step 1
+        run: ls -a
+      - name: step 2
+        run: uname
+      - name: |
+          echo 'Hello world'
+          echo 'Bye - bye'
+  job2:
+    runs-on: ubuntu-latest
+    steps: 
+      - name: step 1
+        run: ls -a
+      - name: step 2
+        run: uname
+      - name: |
+          echo 'Hello world'
+          echo 'Bye - bye'        
+  

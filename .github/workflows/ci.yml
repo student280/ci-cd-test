@@ -24,7 +24,9 @@ jobs:
       - name: Build and push
         uses: docker/build-push-action@v6
         with:
+          context: .
+          platforms: linux/amd64,linux/arm64
           push: true
-          tags: ${{ vars.DOCKERHUB_USERNAME }}/clockbox:latest
+          tags: ${{ vars.DOCKERHUB_USERNAME }}/app-test:latest
 
   

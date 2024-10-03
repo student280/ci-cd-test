@@ -13,4 +13,11 @@ jobs:
           echo 'Hello world'
           echo 'Bye - bye'
           java -version
+      - name: create java program
+        run: |
+          echo 'public class Hello { public static void main(String args[]) { System.out.println("Hello from Github action"); }}' >> Hello.java
+          ls -a
+          javac Hello.java
+          ls -a
+          java Hello
   
